@@ -1,0 +1,194 @@
+.boxAnimatie {
+	width: 300px;
+	height: 460px;
+	position: relative;
+	background: rgba(255,255,255,1);
+	display: inline-block;
+	margin: 0 10px;
+	cursor: pointer;
+	color: #2c3e50;
+	box-shadow: inset 0 0 0 3px #2c3e50;
+	-webkit-transition: background 0.4s 0.5s;
+	transition: background 0.4s 0.5s;
+}
+
+.boxAnimatie:hover {
+	background: rgba(255,255,255,0);
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.boxAnimatie h3 {
+	font-family: "Ruthie", cursive;
+	font-size: 80px;
+	line-height: 370px;
+	margin: 0;
+	font-weight: 400;
+	width: 100%;
+}
+
+.boxAnimatie span {
+	display: block;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 5px;
+}
+
+.boxAnimatie h3,
+.boxAnimatie span {
+	-webkit-transition: color 0.4s 0.5s;
+	transition: color 0.4s 0.5s;
+}
+
+.boxAnimatie:hover h3,
+.boxAnimatie:hover span {
+	color: #fff;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.boxAnimatie svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.boxAnimatie svg line {
+	stroke-width: 3;
+	stroke: #19f6e8;
+	fill: none;
+	-webkit-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+
+.boxAnimatie:hover svg line {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.boxAnimatie svg line.top,
+.boxAnimatie svg line.bottom {
+	stroke-dasharray: 330 240;
+}
+
+.boxAnimatie svg line.left,
+.boxAnimatie svg line.right {
+	stroke-dasharray: 490 400;
+}
+
+.boxAnimatie:hover svg line.top {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+}
+
+.boxAnimatie:hover svg line.bottom {
+	-webkit-transform: translateX(600px);
+	transform: translateX(600px);
+}
+
+.boxAnimatie:hover svg line.left {
+	-webkit-transform: translateY(920px);
+	transform: translateY(920px);
+}
+
+.boxAnimatie:hover svg line.right {
+	-webkit-transform: translateY(-920px);
+	transform: translateY(-920px);
+}
+
+
+/* Color */
+.colorAnimatie .boxAnimatie {
+	box-shadow: inset 0 0 0 10px #2c3e50;
+}
+
+.colorAnimatie .boxAnimatie:hover h3,
+.colorAnimatie .boxAnimatie:hover span {
+	color: #19f6e8;
+}
+
+.colorAnimatie .boxAnimatie svg line {
+	stroke-width: 8;
+}
+
+.colorAnimatie .boxAnimatie:hover svg line {
+	stroke: #19f6e8;
+}
+
+/* Frame */
+
+
+
+
+/* Spin */
+.spinAnimatie .boxAnimatie {
+	box-shadow: none;
+	background: rgba(0,0,0,0.4);
+	-webkit-transition: none;
+	transition: none;
+	color: #fff;
+}
+
+.spinAnimatie .boxAnimatie h3,
+.spinAnimatie .boxAnimatie span {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.spinAnimatie .boxAnimatie:hover h3,
+.spinAnimatie .boxAnimatie:hover span {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.spinAnimatie .boxAnimatie svg line {
+	stroke-width: 30;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+
+.spinAnimatie .boxAnimatie:hover svg line {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.spinAnimatie .boxAnimatie:hover svg line {
+	stroke-width: 0;
+}
+
+.spinAnimatie .boxAnimatie svg line.top,
+.spinAnimatie .boxAnimatie svg line.bottom {
+	stroke-dasharray: 300; 
+}
+
+.spinAnimatie .boxAnimatie svg line.left,
+.spinAnimatie .boxAnimatie svg line.right {
+	stroke-dasharray: 460;
+}
+
+.spinAnimatie .boxAnimatie:hover svg line.top {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+}
+
+.spinAnimatie .boxAnimatie:hover svg line.bottom {
+	-webkit-transform: translateX(300px);
+	transform: translateX(300px);
+}
+
+.spinAnimatie .boxAnimatie:hover svg line.left {
+	-webkit-transform: translateY(460px);
+	transform: translateY(460px);
+}
+
+.spinAnimatie .boxAnimatie:hover svg line.right {
+	-webkit-transform: translateY(-460px);
+	transform: translateY(-460px);
+}
+
